@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardViewMain"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="25dp"
+    android:padding="12dp"
+    android:background="@color/card_background"
+    android:layout_margin="16dp">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/card_background">
+
+        <ImageView
+            android:id="@+id/ivLexicart"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="ImagenDeResultado" />
+
+        <LinearLayout
+            android:id="@+id/llDataContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/card_title"
+                android:textSize="20sp"
+                android:textColor="@color/button"
+                android:layout_marginStart="8dp"
+                android:fontFamily="@font/poppins_bold"/>
+
+            <TextView
+                android:id="@+id/tvPrompt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:padding="8dp"
+                android:textSize="12sp"
+                tools:text="Hello World"
+                android:textColor="@color/font"
+                android:fontFamily="@font/poppins_regular"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:id="@+id/tvDimension"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/dimensiones"
+                    android:textColor="@color/font"
+                    android:fontFamily="@font/poppins_regular"/>
+
+                <TextView
+                    android:id="@+id/tvModel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="@string/modelo"
+                    android:textColor="@color/font"
+                    android:fontFamily="@font/poppins_regular"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bDownload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/button"
+                android:text="Descargar"
+                android:fontFamily="@font/poppins_bold"
+                android:textStyle="bold"
+                android:textColor="@color/font"
+                android:minHeight="48dp"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/bCopy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:layout_marginTop="4dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:backgroundTint="@color/button"
+                android:text="@string/copiar"
+                android:fontFamily="@font/poppins_bold"
+                android:textStyle="bold"
+                android:textColor="@color/font"
+                android:minHeight="48dp"
+                android:textAllCaps="false"
+                android:layout_marginBottom="12dp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bExpandir"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/ver_info"
+            android:textAllCaps="false"
+            android:fontFamily="@font/poppins_medium"
+            android:backgroundTint="@color/card_background"
+            android:textColor="@color/font"/>
+
+    </LinearLayout>
+    
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">IA Image Search</string>
+    <string name="title_app">Busca ideas para tus <u>PROMPTS</u></string>
+    <string name="card_title">Prompt</string>
+    <string name="dimensiones">Dimensiones: </string>
+    <string name="modelo">Modelo: </string>
+    <string name="seed">Seed: </string>
+    <string name="copiar">Copiar</string>
+    <string name="ver_info">Ver info</string>
+</resources>
